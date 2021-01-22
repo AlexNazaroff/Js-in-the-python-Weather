@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  <!-- Подключаемые файлы, метатеги, название страницы -->
+
+  <!-- Кодировка страницы type="text/css" href="style=style.css"-->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" >
+  <title>Название страницы</title>
+  <script src="eel.js"></script>
+
+  <!--подключим скрипт-->
+  </head>
+<body>
+  <!-- Тело сайта, отвечает за вывод на страницу-->
+    <!-- подключаем асинхронную функцию без параметров можно без асинк и уэйт писать-->
+
+  <script>
+     async function call() {
+         await eel.call_in_js('Hellow, World')
+    }
+    call()
+    eel.expose(call_in_python)
+    function call_in_python(x){
+      console.log(x)
+            }
+  </script>
+  <script>-->
+
+
+  </script>
+
+  <header>
+  <!-- Шапка сайта-->
+  </header>
+  <nav>
+  <!-- Навигация -->
+  </nav>
+  <footer>
+  <!-- Подвал сайта-->
+  </footer>
+</body>
+</html>
